@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_DeleteOrders
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2017 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <modules>
+        <Leytech_DeleteOrders>
+            <version>1.0.0</version>
+        </Leytech_DeleteOrders>
+    </modules>
+    <global>
+        <models>
+            <leytech_deleteorders>
+                <class>Leytech_DeleteOrders_Model</class>
+            </leytech_deleteorders>
+        </models>
+        <helpers>
+            <leytech_deleteorders>
+                <class>Leytech_DeleteOrders_Helper</class>
+            </leytech_deleteorders>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <leytech_deleteorders before="Mage_Adminhtml">Leytech_DeleteOrders_Adminhtml</leytech_deleteorders>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <events>
+            <adminhtml_block_html_before>
+                <observers>
+                    <leytech_deleteorders>
+                        <class>leytech_deleteorders/observer</class>
+                        <method>addMassOrderAction</method>
+                    </leytech_deleteorders>
+                </observers>
+            </adminhtml_block_html_before>
+        </events>
+    </adminhtml>
+    <default>
+        <leytech_deleteorders>
+            <settings>
+                <enabled>0</enabled>
+            </settings>
+        </leytech_deleteorders>
+    </default>
+</config>

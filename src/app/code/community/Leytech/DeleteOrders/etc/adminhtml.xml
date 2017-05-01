@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_DeleteOrders
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2017 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <leytech_deleteorders translate="title" module="leytech_deleteorders">
+                                        <title>Leytech Delete Orders</title>
+                                        <sort_order>12040</sort_order>
+                                    </leytech_deleteorders>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <sales>
+                        <children>
+                            <order>
+                                <children>
+                                    <actions>
+                                        <children>
+                                            <delete translate="title">
+                                                <title>Delete (Leytech Delete Orders)</title>
+                                            </delete>
+                                        </children>
+                                    </actions>
+                                </children>
+                            </order>
+                        </children>
+                    </sales>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
