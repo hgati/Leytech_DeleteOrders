@@ -4,12 +4,12 @@ A clean Magento extension for mass deleting orders from the admin panel.
 
 ### Features
 
-- Adds a new "Delete" option to the actions drop-down in the admin order grid
-- Only admin users with the correct permission can see the action or delete orders
-- Extension can be quickly and easily enabled/disabled from the admin area
-- All invoices, credit memos and shipments associated with the selected orders are also deleted
-- Does not rewrites any core blocks or models
-- Ideal for cleaning up after test orders
+- Adds a new "Delete" option to the actions drop-down in the admin order grid.
+- Only admin users with the correct permission can see the action or delete orders.
+- Extension can be quickly and easily enabled/disabled from the admin area.
+- All invoices, credit memos and shipments associated with the selected orders are also deleted.
+- Does not rewrites any core blocks or models.
+- Ideal for cleaning up after test orders.
 
 ### Compatibility
 
