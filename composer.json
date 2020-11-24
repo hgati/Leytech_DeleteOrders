@@ -1,5 +1,5 @@
 {
-    "name": "leytech/leytech_deleteorders",
+    "name": "hgati/leytech_deleteorders",
     "type": "magento-module",
     "description": "Module to delete orders cleanly and without rewrites or other mischief.",
     "homepage": "https://github.com/leytech/Leytech_DeleteOrders",
